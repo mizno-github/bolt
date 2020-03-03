@@ -258,23 +258,3 @@
   display: block;
   clear: both;
 }
-
-
-
-
-
-/* ✅zーindex100
-✅100vw 汎用的な％に直す
-✅擬似要素x　mainにpaddingをつける
-✅igure →　article
-✅figre 80px bottom
-✅*　リストにクラスつける
-✅transitionの位置
-✅ボタン類div aタグ場所変更
-✅article inner場所がおかしい
-✅article h2ボタンでとる
-✅３xに直す
-✅クリックして反応しない
-
-✅footer mainの外
-✅css文字設定 */
