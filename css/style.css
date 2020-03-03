@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 .wrapper {
   background-color: #f2f2f2;
 }
@@ -6,8 +6,8 @@
 .header {
   background: white;
   position: fixed;
-  width: 100vw;
-  z-index: 900000;
+  width: 100%;
+  z-index: 100;
 }
 
 .header__inner {
@@ -22,9 +22,17 @@
   width: 30px;
 }
 
+.link-style_none {
+  text-decoration: none;
+}
+
+.link-style {
+
+  color: white;
+}
+
 .header__content_bg_green {
   background-color: #74cfae;
-  color: white;
   font-size: 12px;
   font-weight: bold;
   transition: 0.3s;
@@ -36,13 +44,16 @@
   width: 60px;
 }
 
-
-.header__content_bg_green:hover {
+.header__content_bg_green:hover>.link-style {
   color: #333;
   transition: 0.3s;
 }
 
 /* div */
+.heading {
+  padding-top: 80px;
+}
+
 .heading__inner {
   padding: 250px 0;
 }
@@ -62,21 +73,24 @@
   text-align: center;
 }
 
-.heading::before {
+/* .heading::before {
   content: "";
   display: block;
   height: 80px;
-}
+} */
                       /* section */
 .section {
   background-color: #74cfae;
 }
-.section__inner{
+
+.section__inner {
   padding-top: 50px;
 }
+
 .section__inner_phoneoeg {
   float: right;
 }
+
 .section__inner_introduction {
   color: white;
   font-size: 20px;
@@ -87,18 +101,18 @@
   width: 692px;
 }
 
-
 .section__inner_introduction *:first-child {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   margin-bottom: 35px;
 }
 
-                      /* figure */
-.figure__inner {
+                      /* article */
+.article__inner {
   padding: 60px 0 70px 0;
 }
-.figure__inner_title {
+
+.article__inner_title {
   color: #333;
   font-size: 24px;
   font-family: 'Raleway', sans-serif;
@@ -106,47 +120,49 @@
   text-align: center;
 }
 
-.figure__inner_list_parent {
+.article__inner_list_parent {
   font-size: 0px;
-  width:100%;
-  margin:40px 0;
+  width: 100%;
+  margin: 40px 0 10px 0;
 }
-.figure__inner_list_parent>* {
-   float:left;
-   margin: 0 95px 40px 0;
-  }
-  .figure__inner_list_parent {
-    display: inline-block;
-  }
+
+.article__inner_lists {
+  float: left;
+  margin: 0 95px 80px 0;
+}
+
+.article__inner_list_parent {
+  display: inline-block;
+}
   
-  .figure__inner_list {
-    opacity: 0.7;
+.article__inner_list {
+  opacity: 0.7;
+  transition: 0.3s;
   display: inline-block;
 }
 
-.figure__inner_list:hover {
-  opacity:1;
-  transition: 0.3s;
+.article__inner_list:hover {
+  opacity: 1;
 }
 
-.figure__inner_list_parent>*:nth-child(3n) {
+.article__inner_lists:nth-child(3n) {
   margin-right: 0px;
 }
 
-.figure__details {
+.article__details {
   display: flex;
   justify-content: center;
   /* margin-bottom: 70px; */
   
 }
 
-.figure__details_p {
+.article__details_p {
   color: #333;
   text-align: center;
   width: 580px;
 }
 
-.figure__details_email {
+.article__details_email {
   background-color: #74cfae;
   color: white;
   font-family: 'Lato', sans-serif;
@@ -156,46 +172,47 @@
   transition: 0.3s;
 }
 
-.figure__details_email:hover {
+.article__details_email:hover {
   color: #333;
   transition: 0.3s;
 }
 
-                      /* article */
-.article {
+                      /* figure */
+.figure {
   background-color: #4e4e4e;
 }
 
-.article__inner {
+.figure__inner {
   padding: 70px 0 100px 0;
 }
 
-.article__inner_title {
+.figure__inner_title {
   color: white;
   font-size: 24px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.article__table {
+.figure__table {
   display: flex;
   justify-content: center; 
 }
 
-.article__table-cell {
+.figure__table-cell {
   color: white;
   font-size: 16px;
-  margin: 50px 180px 0 0;
+  margin-right:180px;
   text-align: center;
 }
 
-
-.article__table-cell :last-child {
+.figure__table-cell :last-child {
   margin-top: 15px;
 }
 
-.article__table-cell:last-child {
+.figure__table-cell:last-child {
   margin-right: 0px;
 }
+
                       /* nav */
 .nav__inner {
   padding: 200px 0;
@@ -235,9 +252,6 @@
   width: 1100px;
   margin: 0 auto;
 }
-.link-style{
-  text-decoration: none;
-}
 
 .clearfix::after {
   content: "";
@@ -246,5 +260,21 @@
 }
 
 
-/* opacity:1効かない
-センタリング効かない */
+
+
+
+/* ✅zーindex100
+✅100vw 汎用的な％に直す
+✅擬似要素x　mainにpaddingをつける
+✅igure →　article
+✅figre 80px bottom
+✅*　リストにクラスつける
+✅transitionの位置
+✅ボタン類div aタグ場所変更
+✅article inner場所がおかしい
+✅article h2ボタンでとる
+✅３xに直す
+✅クリックして反応しない
+
+✅footer mainの外
+✅css文字設定 */
