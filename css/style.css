@@ -19,15 +19,11 @@ body {
 }
 
 .header__inner {
-  display: flex;
-  justify-content: space-between;
   padding: 15px;
 }
 
 .bolt-icon {
   color: #c0c0c0;
-  padding: 10px;
-  width: 30px;
 }
 
 .link-style_none {
@@ -38,7 +34,7 @@ body {
   color: #fff;
 }
 
-.contact-botton {
+.contact-button {
   padding: 14px 12px;
   background-color: #74cfae;
   margin: auto 0;
@@ -47,7 +43,8 @@ body {
   transition: 0.3s;
   /* line-height:1.5em; */
   /* text-align: center; */
-  color:#fff;
+  color: #fff;
+  float: right;
 }
 
 .link-style:hover {
@@ -216,7 +213,7 @@ body {
   text-align: center;
 }
 
-.figure-text {
+.skills-text {
   margin-top: 15px;
 }
 
@@ -338,7 +335,7 @@ body {
     margin-left: 0px;
     width: 100%;
   }
-  
+
   .mail__margin {
     width: 80px;
     margin: 40px auto 0 auto;
@@ -355,14 +352,16 @@ body {
  }
 
  @media (max-width: 767px) {
-   
-   .contact-botton {
+   .contact-button{
+     display: none;
+   }
+   .menu-button {
      padding: 0 10px;
      border: 1px solid #ddd;
      border-radius: 4px;
      width: 30px;
      height: 35px;
-     background-color: rgba(0,0,0,0);
+     float: right;
     }
 
     .mobile-none {
@@ -373,8 +372,6 @@ body {
     .mobile-none .bar {
       display: block;
       margin-top: 5px;
-      background-color: #ccc;
-      width: 25px;;
       border: #ccc 1px solid;
     }
 
@@ -407,3 +404,4 @@ body {
    }
    
  }
+ 
