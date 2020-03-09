@@ -12,80 +12,87 @@
     <meta name="description" content="This is my portfolio site.">
     <meta name="keywords" content="bolt, bootstrap, portfolio">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__inner inner">
           <a href="#"><i class="fas fa-bolt fa-2x bolt-icon"></i></a>
-          <div class="contact-buttom"><a href="#" class="header__content_bg_green link-style_none link-style ">contact</a></div>
+            <a href="#" class="link-style_none link-style contact-botton">
+              <p class="mobile-none">contact
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </p>
+            </a>
         </div>
       </header>
       <main class="heading">
         <div>
           <div class="heading__inner inner">
-            <h1 class="headding__innner_title font__raleway">Bolt Theme</h1>
-            <p class="headding__innner-description">FREE BOOTSTRAP THEMES</p>
+            <h1 class="headding__inner_title font__raleway">Bolt Theme</h1>
+            <p class="headding__inner-description">FREE BOOTSTRAP THEMES</p>
           </div>
         </div>
-        <section class="section">
-          <div class="section__inner inner clearfix">
-            <div class="section__inner_introduction">
-              <h2 class="font__raleway">WHAT WE CAN DO?</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <img class="section__inner_phoneoeg" src="img/iphone.png" alt="phone">
+        <section class="cando">
+          <div class="cando__inner inner clearfix">
+            <img class="cando__inner_phonepeg" src="img/iphone.png" alt="phone">
+              <div class="cando__inner_introduction">
+                <h2 class="font__raleway">WHAT WE CAN DO?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
          </div>
         </section>
-        <article class="article">
-          <div class="article__inner inner ">
-            <h2 class="article__inner_title font__raleway">OUR LAST WORK</h2>
-            <ul class="article__inner_list_parent clearfix">
-              <li class="article__inner_lists"><a href="#" class="article__inner_list"><img  src="img/01.jpg" alt="phone"></a></li>
-              <li class="article__inner_lists"><a class="article__inner_list" href="#"><img src="img/02.jpg" alt="robot"></a></li>
-              <li class="article__inner_lists"><a class="article__inner_list" href="#"><img src="img/03.jpg" alt="gender"></a></li>
-              <li class="article__inner_lists"><a class="article__inner_list" href="#"><img src="img/04.jpg" alt="icon"></a></li>
-              <li class="article__inner_lists"><a class="article__inner_list" href="#"><img src="img/05.jpg" alt="meteo-attack"></a></li>
-              <li class="article__inner_lists"><a class="article__inner_list" href="#"><img src="img/06.jpg" alt="emotion"></a></li>
+        <article class="work">
+          <div class="work__inner inner ">
+            <h2 class="work__inner_title font__raleway">OUR LAST WORK</h2>
+            <ul class="work__inner_list_parent clearfix">
+              <li class="work__inner_lists"><a href="#" class="work__inner_list"><img  src="img/01.jpg" alt="phone"></a></li>
+              <li class="work__inner_lists"><a class="work__inner_list" href="#"><img src="img/02.jpg" alt="robot"></a></li>
+              <li class="work__inner_lists"><a class="work__inner_list" href="#"><img src="img/03.jpg" alt="gender"></a></li>
+              <li class="work__inner_lists"><a class="work__inner_list" href="#"><img src="img/04.jpg" alt="icon"></a></li>
+              <li class="work__inner_lists"><a class="work__inner_list" href="#"><img src="img/05.jpg" alt="meteo-attack"></a></li>
+              <li class="work__inner_lists"><a class="work__inner_list" href="#"><img src="img/06.jpg" alt="emotion"></a></li>
             </ul>
-            <div class="article__details">
-              <p class="article__details_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <div class="work__details">
+              <p class="work__details_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
               <div class="link-style mail__margin">
-                <a href="#" class="link-style_none article__details_email">Email Me!</a>
+                <a href="#" class="link-style_none work__details_email">Email Me!</a>
               </div>
             </div>
           </div>
         </article>
-        <figure class="figure">
-          <div class="figure__inner inner">
-            <h2 class="figure__inner_title font__raleway">OUR SKILLS</h2>
-            <div class="figure__inner_box figure__table">
-              <div class="figure__table-cell">
+        <div class="skills">
+          <div class="skills__inner inner">
+            <h2 class="skills__inner_title font__raleway">OUR SKILLS</h2>
+            <div class="skills__inner_box skills__table">
+              <figure class="skills__table-cell">
                 <img src="img/circle_01.png" alt="java-script">
-                <p>JavaScript</p>
-              </div>
-              <div class="figure__table-cell">
+                <figcaption class="figure-text">JavaScript</figcaption>
+              </figure>
+              <figure class="skills__table-cell">
                 <img src="img/circle_02.png" alt="boots-strap">
-                <p>Bootsstrap</p>
-              </div>
-              <div class="figure__table-cell">
+                <figcaption class="figure-text">Bootstrap</figcaption>
+              </figure>
+              <figure class="skills__table-cell">
                 <img src="img/circle_03.png" alt="word-press">
-                <p>WordPress</p>
-              </div>
-              <div class="figure__table-cell">
+                <figcaption class="figure-text">WordPress</figcaption>
+              </figure>
+              <figure class="skills__table-cell">
                 <img src="img/circle_04.png" alt="photo-shop">
-                <p>Photoshop</p>
-              </div>
+                <figcaption class="figure-text">Photoshop</figcaption>
+              </figure>
             </div>
           </div>
-        </figure>
-        <nav class="nav">
-          <div class="nav__inner inner">
-            <ul class="nav__icon_parent">
-              <li class="nav__style"><a href="#" class="link-style_none nav__icon fab fa-facebook-f fa-3x"></a></li>
-              <li class="nav__style"><a href="#" class="link-style_none nav__icon fab fa-dribbble fa-3x"></a></li>
-              <li class="nav__style"><a href="#" class="link-style_none nav__icon fab fa-twitter fa-3x"></a></li>
-              <li class="nav__style"><a href="#" class="link-style_none nav__icon fas fa-envelope fa-3x"></a></li>
+        </div>
+        <nav class="sns">
+          <div class="sns__inner inner">
+            <ul class="sns__icon_parent">
+              <li class="sns__style"><a href="#" class="link-style_none sns__icon fab fa-facebook-f fa-3x"></a></li>
+              <li class="sns__style"><a href="#" class="link-style_none sns__icon fab fa-dribbble fa-3x"></a></li>
+              <li class="sns__style"><a href="#" class="link-style_none sns__icon fab fa-twitter fa-3x"></a></li>
+              <li class="sns__style"><a href="#" class="link-style_none sns__icon fas fa-envelope fa-3x"></a></li>
             </ul>
           </div>
         </nav>
