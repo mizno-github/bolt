@@ -10,6 +10,17 @@ body {
 .wrapper {
   background-color: #f2f2f2;
 }
+/* 総合 */
+.inner {
+width: 1100px;
+margin: 0 auto;
+}
+
+.clearfix::after {
+content: "";
+display: block;
+clear: both;
+}
                       /* header */
 .header {
   background: #fff;
@@ -53,23 +64,22 @@ body {
 
 /* div */
 .heading {
-  padding-top: 82px;
+  padding-top: 62px;
 }
 
 .heading__inner {
   padding: 250px 0;
 }
 
-.headding__inner_title {
+.heading__inner_title {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
- 
   margin-bottom: 20px;
   text-align: center;
 }
 
-.headding__inner-description {
+.heading__inner-description {
   color: #c0c0c0;
   font-size: 30px;
   text-align: center;
@@ -89,7 +99,7 @@ body {
   padding-top: 50px;
 }
 
-.cando__inner_phonepeg {
+.cando__inner_phonepng {
   float: left;
 }
 
@@ -103,11 +113,10 @@ body {
   width: 692px;
 }
 
-.cando__inner_introduction *:first-child {
+.cando__inner_introduction :first-child {
   font-size: 24px;
   margin-bottom: 35px;
 }
-
                       /* work */
 .work__inner {
   padding: 60px 0 70px 0;
@@ -121,7 +130,7 @@ body {
 }
 
 .work__inner_list_parent {
-  font-size: 0px;
+  font-size: 0;
   width: 100%;
   margin-top: 40px;
   margin-bottom: 90px;
@@ -130,10 +139,6 @@ body {
 .work__inner_lists {
   float: left;
   margin: 0 100px 80px 0;
-}
-
-.work__inner_lists:nth-last-child(4)~li {
-  margin-bottom: 0px;
 }
 
 .work__inner_list_parent {
@@ -151,14 +156,13 @@ body {
 }
 
 .work__inner_lists:nth-child(3n) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .work__details {
   display: flex;
   justify-content: center;
   /* margin-bottom: 70px; */
-  
 }
 
 .work__details_p {
@@ -218,7 +222,7 @@ body {
 }
 
 .skills__table-cell:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
                       /* sns */
@@ -258,33 +262,17 @@ body {
   padding: 20px 0 25px 0;
   text-align: right;
 }
-                      /* 総合 */
-.inner {
-  width: 1100px;
-  margin: 0 auto;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 
 @media (max-width:1199px) {
 
-  .wrapper {
-    width: 100%;
-  }
- 
   .inner {
     box-sizing: border-box;
-    width: 100%;
+    width: 97%;
     margin: 0 auto;
   }
 
   .cando__inner_introduction,
-  .cando__inner_phonepeg {
+  .cando__inner_phonepng {
     float: none;
     margin: 0 auto;
   }
@@ -297,20 +285,17 @@ body {
     padding-bottom: 25px;
   }
 
-  .cando__inner_phonepeg {
+  .cando__inner_phonepng {
     margin-bottom: 20px;
   }
 
   .cando__inner {
     text-align: center;
+    padding-top: 50px;
   }
 
   .skills__table {
     display: inline;
-  }
-
-  .cando__inner {
-    padding-top: 50px;
   }
   
   .work__inner_list_parent {
@@ -322,7 +307,7 @@ body {
     margin: 0;
   }
 
-  .work__inner_lists:nth-child(3n) {
+  .work__inner_lists:nth-child(3n) { 
     margin-bottom: 80px;
   }
 
@@ -332,7 +317,7 @@ body {
   }
 
   .mail__margin,.work__details_p {
-    margin-left: 0px;
+    margin-left: 0;
     width: 100%;
   }
 
@@ -346,27 +331,29 @@ body {
   }
 
   .skills__table-cell:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
  }
 
  @media (max-width: 767px) {
-   .contact-button{
-     display: none;
-   }
-   .menu-button {
-     padding: 0 10px;
-     border: 1px solid #ddd;
-     border-radius: 4px;
-     width: 30px;
-     height: 35px;
-     float: right;
+
+    .contact-button {
+      display: none;
+    }
+   
+    .menu-button {
+      padding: 0 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 30px;
+      height: 35px;
+      float: right;
     }
 
     .mobile-none {
-    font-size: 0;
-    position: relative;
+      font-size: 0;
+      position: relative;
     }
 
     .mobile-none .bar {
@@ -379,29 +366,29 @@ body {
       margin-top: 10px;
     }
 
-   .heading__inner {
-     padding: 160px 0 130px 0;
-   }
+    .heading__inner {
+      padding: 160px 0 130px 0;
+    }
 
-   .headding__inner_title {
-     font-size: 80px;
-   }
+    .heading__inner_title {
+      font-size: 80px;
+    }
 
-   .headding__inner-description {
-     font-size: 30px;
-   }
+    .heading__inner-description {
+      font-size: 30px;
+    }
 
-   .sns__icon_parent {
-     display: block;
-   }
+    .sns__icon_parent {
+      display: block;
+    }
 
-   .sns__inner {
-    padding: 40px 15px;
-   }
-   
-   .sns__style {
-     width: 100%;
-   }
-   
- }
- 
+    .sns__inner {
+      padding: 40px 15px; 
+    }
+  
+    .sns__style {
+       width: 100%;
+    }
+  
+}
+phone0px
